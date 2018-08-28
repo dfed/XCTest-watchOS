@@ -1,0 +1,7 @@
+language: objective-c
+osx_image: xcode9
+before_script:
+    - bundle install
+script:
+    - xcodebuild -project XCTest.xcodeproj -scheme XCTest
+    - pod lib lint --verbose --fail-fast
