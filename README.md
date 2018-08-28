@@ -1,5 +1,6 @@
 # XCTest-watchOS
 
+[![CI Status](https://travis-ci.org/dfed/XCTest-watchOS.svg?branch=master)](https://travis-ci.org/dfed/XCTest-watchOS)
 [![Carthage Compatibility](https://img.shields.io/badge/carthage-✓-e2c245.svg)](https://github.com/Carthage/Carthage/)
 [![Version](https://img.shields.io/cocoapods/v/XCTest-watchOS.svg)](http://cocoadocs.org/docsets/XCTest-watchOS)
 [![License](https://img.shields.io/cocoapods/l/XCTest-watchOS.svg)](http://cocoadocs.org/docsets/XCTest-watchOS)
