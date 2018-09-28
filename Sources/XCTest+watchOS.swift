@@ -33,9 +33,11 @@ open class XCTestCase: NSObject {
 
     // MARK: Class Public
 
-    /// The entry point for running all tests.
-    /// Call this from `applicationDidFinishLaunching` in the `WKExtensionDelegate` implementation of your testing host app.
-    public class func runAllTests() -> Never {
+    /// An entry point for running all tests.
+    /// Call this from your `WKExtensionDelegate` in your testing host app.
+    /// This method can be used to display UI on device if your tests succeed.
+    /// - Returns: `true` if tests succeed.
+    public class func runAllTests() -> Bool {
         let testClasses = allTestClasses()
         
         for testClass in testClasses {
@@ -52,7 +54,18 @@ open class XCTestCase: NSObject {
             print("\n")
         }
         print("ALL TESTS PASSED")
-        exit(0)
+        return true
+    }
+
+    /// An entry point for running all tests.
+    /// Call this from your `WKExtensionDelegate` in your testing host app.
+    /// This method is best used for running tests in CI.
+    public class func runAllTestsAndExit() -> Never {
+        if runAllTests() {
+            exit(0)
+        } else {
+            exit(1)
+        }
     }
     
     // MARK: Class Private

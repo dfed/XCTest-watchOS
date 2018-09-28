@@ -13,7 +13,7 @@ XCTest-watchOS provides an implementation of XCTest that can run on watchOS. XCT
 1. Create a new watchOS app
 1. Include your test files in your new watchOS app extension
 1. Install XCTest-watchOS, and link the included XCTest framework from your new watchOS app extension
-1. Call `XCTestCase.runAllTests()` from `applicationDidFinishLaunching` in your `WKExtensionDelegate` implementation in your new watchOS app extension
+1. Call `XCTestCase.runAllTestsAndExit()` from `applicationDidFinishLaunching` in your `WKExtensionDelegate` implementation in your new watchOS app extension
 1. Run your new watchOS app, and see if your tests succeed
 
 ### CocoaPods
