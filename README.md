@@ -2,9 +2,9 @@
 
 [![CI Status](https://travis-ci.org/dfed/XCTest-watchOS.svg?branch=master)](https://travis-ci.org/dfed/XCTest-watchOS)
 [![Carthage Compatibility](https://img.shields.io/badge/carthage-✓-e2c245.svg)](https://github.com/Carthage/Carthage/)
-[![Version](https://img.shields.io/cocoapods/v/XCTest-watchOS.svg)](http://cocoadocs.org/docsets/XCTest-watchOS)
-[![License](https://img.shields.io/cocoapods/l/XCTest-watchOS.svg)](http://cocoadocs.org/docsets/XCTest-watchOS)
-[![Platform](https://img.shields.io/cocoapods/p/XCTest-watchOS.svg)](http://cocoadocs.org/docsets/XCTest-watchOS)
+[![Version](https://img.shields.io/cocoapods/v/XCTest-watchOS.svg)](https://cocoapods.org/pods/XCTest-watchOS)
+[![License](https://img.shields.io/cocoapods/l/XCTest-watchOS.svg)](https://cocoapods.org/pods/XCTest-watchOS)
+[![Platform](https://img.shields.io/cocoapods/p/XCTest-watchOS.svg)](https://cocoapods.org/pods/XCTest-watchOS)
 
 XCTest-watchOS provides an implementation of XCTest that can run on watchOS. XCTest-watchOS allows you to run your library’s existing `XCTest` suite on watchOS with minimal effort.
 
