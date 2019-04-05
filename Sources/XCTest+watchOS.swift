@@ -229,45 +229,45 @@ public class XCTestExpectation {
 public func XCTAssertTrue(_ expression: @autoclosure () throws -> Bool, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
     do {
         let result = try expression()
-        assert(result, message, file: file, line: line)
+        assert(result, message(), file: file, line: line)
     } catch _ {
-        assertionFailure(message, file: file, line: line)
+        assertionFailure(message(), file: file, line: line)
     }
 }
 
 public func XCTAssertFalse(_ expression: @autoclosure () throws -> Bool, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
     do {
         let result = try expression()
-        assert(!result, message, file: file, line: line)
+        assert(!result, message(), file: file, line: line)
     } catch _ {
-        assertionFailure(message, file: file, line: line)
+        assertionFailure(message(), file: file, line: line)
     }
 }
 
 public func XCTAssertNil(_ expression: @autoclosure () throws -> Any?, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
     do {
         let result = try expression()
-        assert(result == nil, message, file: file, line: line)
+        assert(result == nil, message(), file: file, line: line)
     } catch _ {
-        assertionFailure(message, file: file, line: line)
+        assertionFailure(message(), file: file, line: line)
     }
 }
 
 public func XCTAssertEqual<T: Equatable>(_ expression1: @autoclosure () throws -> T?, _ expression2: @autoclosure () throws -> T?, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
     do {
         let (value1, value2) = (try expression1(), try expression2())
-        assert(value1 == value2, message, file: file, line: line)
+        assert(value1 == value2, message(), file: file, line: line)
     } catch _ {
-        assertionFailure(message, file: file, line: line)
+        assertionFailure(message(), file: file, line: line)
     }
 }
 
 public func XCTAssertNotEqual<T: Equatable>(_ expression1: @autoclosure () throws -> T, _ expression2: @autoclosure () throws -> T, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
     do {
         let (value1, value2) = (try expression1(), try expression2())
-        assert(value1 != value2, message, file: file, line: line)
+        assert(value1 != value2, message(), file: file, line: line)
     } catch _ {
-        assertionFailure(message, file: file, line: line)
+        assertionFailure(message(), file: file, line: line)
     }
 }
 
