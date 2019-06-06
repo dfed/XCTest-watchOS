@@ -1,14 +1,24 @@
-// swift-tools-version:4.0
+// swift-tools-version:5.0
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
 
 let package = Package(
-    name: "XCTest",
-    products: [
-        .library(name: "XCTest", targets: ["XCTest"]),
+    name: "XCTest-watchOS",
+    platforms: [
+        .watchOS(.v2),
     ],
+    products: [
+        .library(
+            name: "XCTest",
+            targets: ["XCTest"]),
+    ],
+    dependencies: [],
     targets: [
-        .target(name: "XCTest", path: "Sources"),
-    ]
+        .target(
+            name: "XCTest",
+            dependencies: []),
+    ],
+    swiftLanguageVersions: [.v4, .v4_2, .v5]
 )
+let version = Version(0, 0, 1)
