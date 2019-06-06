@@ -9,5 +9,5 @@ Pod::Spec.new do |s|
   s.source_files = 'Sources/**/*.{swift,h}'
   s.public_header_files = 'Sources/**/*.h'
   s.watchos.deployment_target = '2.0'
-  s.swift_versions = ['4.0', '4.2', '5.0']
+  s.swift_version = '4.0'
 end
