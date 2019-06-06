@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16A0D5BF2134D43E008D852B /* XCTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 16A0D5BD2134D43E008D852B /* XCTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		16A0D5C62134D499008D852B /* XCTest+watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16A0D5C52134D499008D852B /* XCTest+watchOS.swift */; };
+		16BBF8C322A988D400949477 /* XCTest+watchOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BBF8C122A988D400949477 /* XCTest+watchOS.swift */; };
+		16BBF8C422A988D400949477 /* XCTest.h in Headers */ = {isa = PBXBuildFile; fileRef = 16BBF8C222A988D400949477 /* XCTest.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		16A0D5BA2134D43E008D852B /* XCTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = XCTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		16A0D5BD2134D43E008D852B /* XCTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XCTest.h; sourceTree = "<group>"; };
 		16A0D5BE2134D43E008D852B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16A0D5C52134D499008D852B /* XCTest+watchOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+watchOS.swift"; sourceTree = "<group>"; };
+		16BBF8C122A988D400949477 /* XCTest+watchOS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "XCTest+watchOS.swift"; sourceTree = "<group>"; };
+		16BBF8C222A988D400949477 /* XCTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCTest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +48,19 @@
 		16A0D5BC2134D43E008D852B /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				16A0D5C52134D499008D852B /* XCTest+watchOS.swift */,
-				16A0D5BD2134D43E008D852B /* XCTest.h */,
+				16BBF8C022A988D400949477 /* XCTest */,
 				16A0D5BE2134D43E008D852B /* Info.plist */,
 			);
 			path = Sources;
+			sourceTree = "<group>";
+		};
+		16BBF8C022A988D400949477 /* XCTest */ = {
+			isa = PBXGroup;
+			children = (
+				16BBF8C122A988D400949477 /* XCTest+watchOS.swift */,
+				16BBF8C222A988D400949477 /* XCTest.h */,
+			);
+			path = XCTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -62,7 +70,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A0D5BF2134D43E008D852B /* XCTest.h in Headers */,
+				16BBF8C422A988D400949477 /* XCTest.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,7 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16A0D5C62134D499008D852B /* XCTest+watchOS.swift in Sources */,
+				16BBF8C322A988D400949477 /* XCTest+watchOS.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
