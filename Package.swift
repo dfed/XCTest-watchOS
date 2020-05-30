@@ -21,4 +21,3 @@ let package = Package(
     ],
     swiftLanguageVersions: [.v4, .v4_2, .v5]
 )
-let version = Version(0, 0, 1)
