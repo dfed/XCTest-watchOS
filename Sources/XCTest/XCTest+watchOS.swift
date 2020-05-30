@@ -253,6 +253,15 @@ public func XCTAssertNil(_ expression: @autoclosure () throws -> Any?, _ message
     }
 }
 
+public func XCTAssertNotNil(_ expression: @autoclosure () throws -> Any?, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
+    do {
+        let result = try expression()
+        assert(result != nil, message(), file: file, line: line)
+    } catch _ {
+        assertionFailure(message(), file: file, line: line)
+    }
+}
+
 public func XCTAssertEqual<T: Equatable>(_ expression1: @autoclosure () throws -> T?, _ expression2: @autoclosure () throws -> T?, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line) {
     do {
         let (value1, value2) = (try expression1(), try expression2())
@@ -268,6 +277,15 @@ public func XCTAssertNotEqual<T: Equatable>(_ expression1: @autoclosure () throw
         assert(value1 != value2, message(), file: file, line: line)
     } catch _ {
         assertionFailure(message(), file: file, line: line)
+    }
+}
+
+public func XCTAssertThrowsError<T>(_ expression: @autoclosure () throws -> T, _ message: @autoclosure () -> String = "", file: StaticString = #file, line: UInt = #line, _ errorHandler: (Error) -> Void = { _ in }) {
+    do {
+        _ = try expression()
+        XCTFail(message(), file: file, line: line)
+    } catch {
+        errorHandler(error)
     }
 }
 
