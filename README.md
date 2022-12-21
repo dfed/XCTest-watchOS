@@ -1,6 +1,6 @@
 # XCTest-watchOS
 
-[![CI Status](https://img.shields.io/github/workflow/status/dfed/XCTest-watchOS/CI/master)](https://github.com/dfed/XCTest-watchOS/actions?query=workflow%3ACI+branch%3Amaster)
+[![CI Status](https://img.shields.io/github/actions/workflow/status/dfed/XCTest-watchOS/ci.yml?branch=master)](https://github.com/dfed/XCTest-watchOS/actions?query=workflow%3ACI+branch%3Amaster)
 [![Carthage Compatibility](https://img.shields.io/badge/carthage-✓-e2c245.svg)](https://github.com/Carthage/Carthage/)
 [![Version](https://img.shields.io/cocoapods/v/XCTest-watchOS.svg)](https://cocoapods.org/pods/XCTest-watchOS)
 [![License](https://img.shields.io/cocoapods/l/XCTest-watchOS.svg)](https://cocoapods.org/pods/XCTest-watchOS)
