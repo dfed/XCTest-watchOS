@@ -9,10 +9,13 @@ on:
 jobs:
   pod-lint:
     name: Pod Lint
-    runs-on: macOS-11
+    runs-on: macOS-14
     steps:
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.4'
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Bundle Install
         run: bundle install
       - name: Lint Podspec
@@ -21,7 +24,10 @@ jobs:
     name: Build
     runs-on: macOS-latest
     steps:
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.3.4'
       - name: Checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - name: Build
         run: xcrun xcodebuild -project XCTest.xcodeproj -scheme XCTest
