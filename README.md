@@ -1,10 +1,6 @@
 # XCTest-watchOS
 
 [![CI Status](https://img.shields.io/github/actions/workflow/status/dfed/XCTest-watchOS/ci.yml?branch=master)](https://github.com/dfed/XCTest-watchOS/actions?query=workflow%3ACI+branch%3Amaster)
-[![Carthage Compatibility](https://img.shields.io/badge/carthage-✓-e2c245.svg)](https://github.com/Carthage/Carthage/)
-[![Version](https://img.shields.io/cocoapods/v/XCTest-watchOS.svg)](https://cocoapods.org/pods/XCTest-watchOS)
-[![License](https://img.shields.io/cocoapods/l/XCTest-watchOS.svg)](https://cocoapods.org/pods/XCTest-watchOS)
-[![Platform](https://img.shields.io/cocoapods/p/XCTest-watchOS.svg)](https://cocoapods.org/pods/XCTest-watchOS)
 
 XCTest-watchOS provides an implementation of XCTest that can run on watchOS. XCTest-watchOS allows you to run your library’s existing `XCTest` suite on watchOS with minimal effort.
 
@@ -18,23 +14,7 @@ XCTest-watchOS provides an implementation of XCTest that can run on watchOS. XCT
 
 ### CocoaPods
 
-Install with [CocoaPods](http://cocoapods.org) by adding the following to your `Podfile`:
-
-```
-platform :watchos, '2.0'
-use_frameworks!
-pod 'XCTest-watchOS'
-```
-
-### Carthage
-
-Install with [Carthage](https://github.com/Carthage/Carthage) by adding the following to your `Cartfile`:
-
-```ogdl
-github "dfed/XCTest-watchOS"
-```
-
-Run `carthage` to build the framework and drag the built `XCTest.framework` into your Xcode project.
+Versions through 0.0.2 remain available on CocoaPods. Newer releases will not be published to CocoaPods, so use one of the installation methods below.
 
 ### Swift Package Manager
 
