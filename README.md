@@ -16,16 +16,6 @@ XCTest-watchOS provides an implementation of XCTest that can run on watchOS. XCT
 
 Versions through 0.0.2 remain available on CocoaPods. Newer releases will not be published to CocoaPods, so use one of the installation methods below.
 
-### Carthage
-
-Install with [Carthage](https://github.com/Carthage/Carthage) by adding the following to your `Cartfile`:
-
-```ogdl
-github "dfed/XCTest-watchOS"
-```
-
-Run `carthage` to build the framework and drag the built `XCTest.framework` into your Xcode project.
-
 ### Swift Package Manager
 
 Install with [Swift Package Manager](https://github.com/apple/swift-package-manager) by adding the following to your `Package.swift`:
