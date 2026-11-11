@@ -1,7 +1,6 @@
 # XCTest-watchOS
 
 [![CI Status](https://img.shields.io/github/actions/workflow/status/dfed/XCTest-watchOS/ci.yml?branch=master)](https://github.com/dfed/XCTest-watchOS/actions?query=workflow%3ACI+branch%3Amaster)
-[![Carthage Compatibility](https://img.shields.io/badge/carthage-✓-e2c245.svg)](https://github.com/Carthage/Carthage/)
 
 XCTest-watchOS provides an implementation of XCTest that can run on watchOS. XCTest-watchOS allows you to run your library’s existing `XCTest` suite on watchOS with minimal effort.
 
